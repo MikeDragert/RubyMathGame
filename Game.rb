@@ -15,7 +15,7 @@ class Game
       advancePlayer
       askNextQuestion
     end
-    self.finishGame
+    finishGame
   end
   
   private
@@ -61,7 +61,7 @@ class Game
   end
 
   def printScore
-    p "#{@players[0].name}: #{@players[0].lives}/#{MAXLIVES} vs. #{@players[1].name}: #{@players[1].lives}/#{MAXLIVES} "
+    puts "#{@players[0].name}: #{@players[0].lives}/#{MAXLIVES} vs. #{@players[1].name}: #{@players[1].lives}/#{MAXLIVES} "
   end
 
   def printNewTurn
